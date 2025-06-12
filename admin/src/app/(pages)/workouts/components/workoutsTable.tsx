@@ -416,7 +416,7 @@ const WorkoutsTable: React.FC<{ refresh: boolean }> = ({ refresh }) => {
         sx={{ padding: 2 }}
       >
         <Grid item>
-          <IconButton
+          {/* <IconButton
             sx={{
               color: "#919eab",
               marginLeft: "10px",
@@ -426,7 +426,7 @@ const WorkoutsTable: React.FC<{ refresh: boolean }> = ({ refresh }) => {
           >
             <FileDownloadOutlinedIcon />
             Export Data
-          </IconButton>
+          </IconButton> */}
         </Grid>
         <Grid item>
           <TablePagination

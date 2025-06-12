@@ -277,10 +277,18 @@ const AddNewPopup: React.FC<AddNewPopupProps> = ({
         health_risks: selectedHealthRisks,
       };
 
-      const workoutDocRef = doc(collection(db, "Workouts"), name);
+      let workoutDocRef;
+      if (type === "edit" && initialData?.id) {
+        workoutDocRef = doc(db, "Workouts", initialData.id); // Cập nhật đúng document cũ
+      } else {
+        workoutDocRef = doc(collection(db, "Workouts"), name); // Thêm mới
+      }
       await setDoc(workoutDocRef, workoutData);
 
-      showAlert("Lưu bài tập thành công", "success");
+      showAlert(
+        type === "edit" ? "Chỉnh sửa bài tập thành công" : "Thêm mới bài tập thành công",
+        "success"
+      );
 
       onWorkoutAdded();
 

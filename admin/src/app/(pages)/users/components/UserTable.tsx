@@ -430,7 +430,7 @@ const UserTable: React.FC<UserTableProps> = ({ refresh }) => {
         sx={{ padding: 2 }}
       >
         <Grid item>
-          <IconButton
+          {/* <IconButton
             sx={{
               color: "#919eab",
               marginLeft: "10px",
@@ -440,7 +440,7 @@ const UserTable: React.FC<UserTableProps> = ({ refresh }) => {
           >
             <FileDownloadOutlinedIcon />
             Export Data
-          </IconButton>
+          </IconButton> */}
         </Grid>
         <Grid item>
           <TablePagination

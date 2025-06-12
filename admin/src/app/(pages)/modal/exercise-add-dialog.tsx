@@ -360,7 +360,10 @@ const AddNewPopup: React.FC<AddPopupProps> = ({
 
       // Lưu dữ liệu vào Firestore
       await setDoc(existingExerciseDoc, exerciseData);
-      showAlert("Tạo bài tập thành công", "success");
+      showAlert(
+        type === "edit" ? "Chỉnh sửa bài tập thành công" : "Tạo bài tập thành công",
+        "success"
+      );
 
       onExerciseAdded();
       setTimeout(handleClose, 2000);

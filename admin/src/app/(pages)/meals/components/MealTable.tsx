@@ -280,7 +280,7 @@ const MealTable: React.FC<MealTableProps> = ({ refresh }) => {
       }}
     >
       <TableContainer
-        sx={{ flexGrow: 1, maxHeight: "100vh", overflow: "auto" }}
+        sx={{ flexGrow: 1, overflow: "auto" }}
       >
         <Table sx={{ width: "100%" }} aria-label="meals table">
           <TableHead sx={{ background: "#f4f6f8" }}>
@@ -438,7 +438,7 @@ const MealTable: React.FC<MealTableProps> = ({ refresh }) => {
         sx={{ padding: 2 }}
       >
         <Grid item>
-          <IconButton
+          {/* <IconButton
             sx={{
               color: "#919eab",
               marginLeft: "10px",
@@ -448,7 +448,7 @@ const MealTable: React.FC<MealTableProps> = ({ refresh }) => {
           >
             <FileDownloadOutlinedIcon />
             Export Data
-          </IconButton>
+          </IconButton> */}
         </Grid>
         <Grid item>
           <TablePagination

@@ -242,7 +242,7 @@ const handleDeleteSelected = async () => {
       }}
     >
       <TableContainer
-        sx={{ flexGrow: 1, maxHeight: "100vh", overflow: "auto" }}
+        sx={{ flexGrow: 1, overflow: "auto" }}
       >
         <Table sx={{ width: "100%" }} aria-label="ingredients table">
           <TableHead sx={{ background: "#f4f6f8" }}>
@@ -385,7 +385,7 @@ const handleDeleteSelected = async () => {
         sx={{ padding: 2 }}
       >
         <Grid item>
-          <IconButton
+          {/* <IconButton
             sx={{
               color: "#919eab",
               marginLeft: "10px",
@@ -395,7 +395,7 @@ const handleDeleteSelected = async () => {
           >
             <FileDownloadOutlinedIcon />
             Export Data
-          </IconButton>
+          </IconButton> */}
         </Grid>
         <Grid item>
           <TablePagination
